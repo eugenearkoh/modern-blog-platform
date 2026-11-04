@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Journey Journal — real stories, bold ideas and fresh perspectives from Ghana and beyond.">
+  <title>The Journey Journal | Real Stories. Bold Ideas.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <p>Stories from Ghana. Perspectives for the world.</p>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="The Journey Journal home">
+      <span class="brand-mark">J<span>.</span></span>
+      <span class="brand-name">THE JOURNEY <b>JOURNAL</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#latest" class="nav-link">Latest stories</a>
+      <a href="#topics" class="nav-link">Topics</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+    <a class="header-cta" href="#newsletter">Join the community <span>↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE GHANAIAN EDITION · VOL. 01</p>
+        <h1>Every journey<br>has a story <em>worth telling.</em></h1>
+        <p class="hero-intro">A thoughtful space for real experiences, fresh ideas and the people shaping tomorrow — from Ghana and beyond.</p>
+        <a class="text-link" href="#latest">Explore the journal <span>→</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="A warm view of a Ghanaian coastal neighbourhood">
+        <div class="hero-note">
+          <span class="note-label">OUR POINT OF VIEW</span>
+          <strong>Curiosity.<br>Growth.<br>Possibility.</strong>
+          <span class="note-line"></span>
+          <small>Accra, Ghana · 2026</small>
+        </div>
+        <span class="image-caption">A new perspective begins with a first step.</span>
+      </div>
+    </section>
+
+    <section class="featured section-wrap" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE EDITOR'S PICK</p>
+          <h2>Featured story</h2>
+        </div>
+        <span class="issue-label">01 / PERSONAL JOURNEYS</span>
+      </div>
+      <article class="featured-card">
+        <div class="featured-image">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="A person working thoughtfully at a laptop">
+          <span class="image-tag">PERSONAL GROWTH</span>
+        </div>
+        <div class="featured-content">
+          <p class="article-meta">A PERSONAL REFLECTION <span>•</span> 7 MIN READ</p>
+          <h3 id="featured-title">Beyond the Setbacks: A Journey of Service, Learning and Purpose</h3>
+          <p class="featured-excerpt">A story about finding direction through healthcare, community service and the courage to keep learning — even when the road takes an unexpected turn.</p>
+          <div class="author-row">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Author portrait">
+            <div><strong>Eugene Obed Arkoh</strong><span>Guest contributor · Ghana</span></div>
+            <a class="round-arrow" href="#my-story" aria-label="Read featured story">↗</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="latest section-wrap" id="latest">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FRESH FROM THE JOURNAL</p>
+          <h2>Ideas worth your time.</h2>
+        </div>
+        <p class="heading-aside">Good stories inform us.<br>Great stories move us.</p>
+      </div>
+
+      <div class="filter-bar" id="topics">
+        <span class="filter-label">EXPLORE BY TOPIC</span>
+        <div class="filter-buttons" role="group" aria-label="Filter articles by category">
+          <button class="filter-btn active" data-filter="all">All stories</button>
+          <button class="filter-btn" data-filter="Technology">Technology</button>
+          <button class="filter-btn" data-filter="Education">Education</button>
+          <button class="filter-btn" data-filter="Community">Community</button>
+          <button class="filter-btn" data-filter="Lifestyle">Lifestyle</button>
+        </div>
+      </div>
+
+      <div class="article-grid" id="articleGrid">
+        <article class="article-card" data-category="Technology">
+          <a class="card-image" href="#newsletter">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=85" alt="Young professionals collaborating around a laptop">
+            <span class="category-pill">TECHNOLOGY</span>
+          </a>
+          <div class="card-body">
+            <p class="article-meta">DIGITAL CULTURE <span>•</span> 5 MIN READ</p>
+            <h3>Learning to Build in a World That Keeps Changing</h3>
+            <p>Technology can feel like a moving target. A practical look at staying curious, building skills and learning by doing.</p>
+            <div class="card-footer"><span>Journal Desk</span><span>↗</span></div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="Education">
+          <a class="card-image" href="#newsletter">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" alt="Students studying together">
+            <span class="category-pill">EDUCATION</span>
+          </a>
+          <div class="card-body">
+            <p class="article-meta">LEARNING & GROWTH <span>•</span> 4 MIN READ</p>
+            <h3>When the Plan Changes, Keep the Purpose</h3>
+            <p>Not every opportunity arrives on schedule. Sometimes progress begins when we choose to keep preparing.</p>
+            <div class="card-footer"><span>Journal Desk</span><span>↗</span></div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="Community">
+          <a class="card-image" href="#newsletter">
+            <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=85" alt="Healthcare professional speaking with a community member">
+            <span class="category-pill">COMMUNITY</span>
+          </a>
+          <div class="card-body">
+            <p class="article-meta">HEALTH & SERVICE <span>•</span> 6 MIN READ</p>
+            <h3>Small Acts of Service Can Leave a Lasting Mark</h3>
+            <p>Community health awareness reminds us that knowledge matters most when it reaches people and supports better choices.</p>
+            <div class="card-footer"><span>Journal Desk</span><span>↗</span></div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="Lifestyle">
+          <a class="card-image" href="#newsletter">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="A calm, light-filled workspace">
+            <span class="category-pill">LIFESTYLE</span>
+          </a>
+          <div class="card-body">
+            <p class="article-meta">EVERYDAY INSPIRATION <span>•</span> 3 MIN READ</p>
+            <h3>Make Room for the Person You Are Becoming</h3>
+            <p>Growth is often quiet: a new habit, a difficult lesson, a little more confidence and the decision to try again.</p>
+            <div class="card-footer"><span>Journal Desk</span><span>↗</span></div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="Technology">
+          <a class="card-image" href="#newsletter">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85" alt="Modern robotics and technology">
+            <span class="category-pill">TECHNOLOGY</span>
+          </a>
+          <div class="card-body">
+            <p class="article-meta">AI & INNOVATION <span>•</span> 5 MIN READ</p>
+            <h3>Making Artificial Intelligence Useful in Everyday Life</h3>
+            <p>Beyond the headlines, thoughtful use of AI can support learning, creativity and the way organisations work.</p>
+            <div class="card-footer"><span>Journal Desk</span><span>↗</span></div>
+          </div>
+        </article>
+
+        <article class="article-card" data-category="Community">
+          <a class="card-image" href="#newsletter">
+            <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=900&q=85" alt="Volunteers working together at a community event">
+            <span class="category-pill">COMMUNITY</span>
+          </a>
+          <div class="card-body">
+            <p class="article-meta">PEOPLE & PURPOSE <span>•</span> 4 MIN READ</p>
+            <h3>A Stronger Community Starts With Showing Up</h3>
+            <p>Volunteering is not always about grand gestures. It can begin with giving your time, sharing knowledge and listening.</p>
+            <div class="card-footer"><span>Journal Desk</span><span>↗</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No stories in this category yet. Try another topic.</p>
+    </section>
+
+    <section class="story-section section-wrap" id="my-story">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85" alt="A quiet desk with a laptop and notebook">
+        <span class="story-image-caption">THE JOURNEY IS STILL UNFOLDING</span>
+      </div>
+      <article class="story-copy">
+        <p class="eyebrow">A NOTE FROM THE CONTRIBUTOR</p>
+        <h2>Beyond the setbacks: a journey of service, learning and purpose.</h2>
+        <p class="story-lead">I am learning that a meaningful journey is not measured only by how quickly we arrive, but by what we choose to do along the way.</p>
+        <p>My path has brought me close to healthcare, learning and community service. Through hospital and clinical exposure, I have seen how important care, patience and human connection are. Taking part in health outreach activities, including health awareness engagement with young people, has also strengthened my appreciation for sharing knowledge and serving others.</p>
+        <p>My educational journey has not unfolded exactly as I once imagined. An earlier attempt to secure admission did not produce the outcome I hoped for. It was disappointing, but it did not end my desire to grow. I chose to keep learning and preparing.</p>
+        <p>That decision opened new doors into technology. I explored artificial intelligence, data analytics, machine learning and prompt engineering through online learning. I completed 24 AI-related courses on SoloLearn, then began developing practical skills through frontend development at Pynexia Technology. I am also pursuing further AI training alongside it.</p>
+        <p>I am still a student of life, still building my skills and still working towards goals that matter to me. I hope to bring together what I learn in healthcare, technology and service to create useful solutions for people and organisations.</p>
+        <blockquote>“A change in direction does not have to mean the end of the journey. Sometimes it is where a new purpose begins.”</blockquote>
+        <p>I share this for anyone who feels delayed or uncertain. Keep learning. Keep serving. Keep taking the next honest step. Your story is still being written.</p>
+        <div class="story-signoff"><strong>Eugene Obed Arkoh</strong><span>Contributor · Ghana</span></div>
+      </article>
+    </section>
+
+    <section class="newsletter section-wrap" id="newsletter">
+      <div>
+        <p class="eyebrow">A GOOD READ, EVERY NOW AND THEN</p>
+        <h2>Stay curious.<br><em>Stay in the loop.</em></h2>
+        <p>Get thoughtful stories and fresh perspectives delivered to your inbox.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <label for="emailInput">YOUR EMAIL ADDRESS</label>
+        <div class="input-row">
+          <input type="email" id="emailInput" placeholder="you@example.com" required>
+          <button type="submit">Subscribe <span>→</span></button>
+        </div>
+        <p class="form-message" id="formMessage" aria-live="polite">No noise. Just stories worth opening.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">J<span>.</span></span>
+      <span class="brand-name">THE JOURNEY <b>JOURNAL</b></span>
+    </a>
+    <p>Real stories. Bold ideas. Endless possibilities.</p>
+    <span class="copyright">© 2026 The Journey Journal · Made in Ghana 🇬🇭</span>
+  </footer>
+</body>
+</html>
